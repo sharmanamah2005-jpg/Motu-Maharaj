@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Motu Maharaj | Food That Hits Different</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+
+    <div class="announcement">
+        🔥 THE STREET FOOD EXPERIENCE YOU DESERVE
+        <span>Freshly Made • Full of Flavour</span>
+    </div>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            <div class="logo-icon">M</div>
+
+            <div>
+                <h2>MOTU <span>MAHARAJ</span></h2>
+                <small>THE FOOD KINGDOM</small>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#order">Order Now</a>
+        </nav>
+
+        <button class="cart-nav" id="cartButton">
+            🛒 <span>Cart</span>
+            <b id="cartCount">0</b>
+        </button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-tag">
+                ✦ WELCOME TO MOTU MAHARAJ
+            </div>
+
+            <h1>
+                GOOD FOOD.<br>
+                <span>GREAT MOOD.</span>
+            </h1>
+
+            <p>
+                From crispy momos to cheesy burgers,
+                discover the taste that makes every bite unforgettable.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="primary-btn">
+                    Explore Menu →
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    Our Story
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <h3>70+</h3>
+                    <p>Food Choices</p>
+                </div>
+
+                <div>
+                    <h3>100%</h3>
+                    <p>Veg Menu</p>
+                </div>
+
+                <div>
+                    <h3>₹50</h3>
+                    <p>Starting Price</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="food-circle">
+                <img
+                    src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=900"
+                    alt="Delicious momos"
+                >
+            </div>
+
+            <div class="floating-card">
+                <span>🔥</span>
+                <div>
+                    <strong>Customer Favourite</strong>
+                    <small>Delicious Momos</small>
+                </div>
+            </div>
+
+            <div class="round-badge">
+                <span>MADE WITH</span>
+                <strong>LOVE</strong>
+                <span>AND SPICES</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURE STRIP -->
+
+    <section class="feature-strip">
+
+        <div>🥬 100% Vegetarian</div>
+        <div>🔥 Freshly Prepared</div>
+        <div>❤️ Made With Love</div>
+        <div>🍽️ Amazing Taste</div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=900"
+                alt="Freshly prepared food"
+            >
+        </div>
+
+        <div class="about-content">
+
+            <span class="section-label">OUR FOOD PHILOSOPHY</span>
+
+            <h2>
+                Not Just Food,<br>
+                It's An <span>Emotion.</span>
+            </h2>
+
+            <p>
+                Welcome to Motu Maharaj, where every dish brings
+                together amazing flavours, fresh ingredients and
+                the happiness of street food.
+            </p>
+
+            <p>
+                From steaming hot momos to delicious noodles,
+                we make every order with care.
+            </p>
+
+            <a href="#menu" class="primary-btn">
+                Discover Our Menu →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU SECTION -->
+
+    <main class="menu-section" id="menu">
+
+        <div class="section-heading">
+
+            <span class="section-label">THE FOOD KINGDOM</span>
+
+            <h2>
+                Explore Our <span>Menu</span>
+            </h2>
+
+            <p>
+                Your cravings deserve something special.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="menu-search">
+
+            <span>🔍</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search momos, noodles, burgers..."
+            >
+
+        </div>
+
+
+        <!-- CATEGORY BUTTONS -->
+
+        <div class="categories" id="categories"></div>
+
+
+        <!-- MENU ITEMS -->
+
+        <div class="menu-grid" id="menuGrid"></div>
+
+    </main>
+
+
+    <!-- SPECIAL BANNER -->
+
+    <section class="special-banner">
+
+        <div>
+            <span>THE ULTIMATE FOOD EXPERIENCE</span>
+
+            <h2>
+                Cravings Don't Wait.<br>
+                Neither Should You!
+            </h2>
+
+            <a href="#menu" class="light-btn">
+                Order Your Favourite →
+            </a>
+        </div>
+
+        <div class="banner-emoji">🥟🍔🍜</div>
+
+    </section>
+
+
+    <!-- CART & CHECKOUT -->
+
+    <section class="order-section" id="order">
+
+        <div class="section-heading">
+
+            <span class="section-label">YOUR ORDER</span>
+
+            <h2>
+                Ready To <span>Eat?</span>
+            </h2>
+
+            <p>Review your cart and complete your order.</p>
+
+        </div>
+
+
+        <div class="checkout-layout">
+
+            <!-- CART -->
+
+            <div class="cart-panel">
+
+                <div class="panel-heading">
+    <h3>🛒 Your Shopping Cart</h3>
+    <span id="cartItemLabel">0 Items</span>
+</div>
+                <div id="cartItems" class="cart-items">
+
+                    <p>Your cart is empty. Add something delicious!</p>
+
+                </div>
+
+                <div class="cart-total">
+
+                    <span>Total Amount</span>
+
+                    <strong id="cartTotal">₹0</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUSTOMER DETAILS -->
+
+            <div class="checkout-panel">
+
+                <h3>Delivery Details</h3>
+
+                <form id="checkoutForm">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        name="customer_name"
+                        placeholder="Enter your name"
+                        required
+                        minlength="2"
+                    >
+
+                    <label>Mobile Number</label>
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Enter mobile number"
+                        required
+                        pattern="[0-9]{10}"
+                    >
+
+                    <label>Delivery Address</label>
+
+                    <textarea
+                        name="address"
+                        placeholder="Enter your complete address"
+                        required
+                        minlength="5"
+                    ></textarea>
+
+                    <label>Special Instructions</label>
+
+                    <textarea
+                        name="notes"
+                        placeholder="Any special instructions? (Optional)"
+                    ></textarea>
+
+
+                    <!-- PAYMENT -->
+
+                    <h3 class="payment-title">
+                        Select Payment Method
+                    </h3>
+
+                    <label class="payment-card">
+
+                        <input
+                            type="radio"
+                            name="payment_method"
+                            value="cod"
+                            checked
+                        >
+
+                        <span>💵</span>
+
+                        <div>
+                            <strong>Cash On Delivery</strong>
+                            <small>Pay when your food arrives.</small>
+                        </div>
+
+                    </label>
+
+
+                    <label class="payment-card">
+
+                        <input
+                            type="radio"
+                            name="payment_method"
+                            value="online"
+                        >
+
+                        <span>💳</span>
+
+                        <div>
+                            <strong>Online Payment</strong>
+                            <small>UPI, PhonePe, Paytm, Navi & Cards.</small>
+                        </div>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="place-order-btn"
+                        id="placeOrder"
+                    >
+                        Place My Order →
+                    </button>
+
+                    <p id="orderMessage" class="order-message"></p>
+
+                    <p class="secure-note">
+                        🔒 Secure checkout • Safe payment
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>MOTU <span>MAHARAJ</span></h2>
+
+                <p>
+                    Bringing happiness to your plate,
+                    one delicious bite at a time.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#order">Order Now</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Food Categories</h3>
+
+                <a href="#menu">Momos</a>
+                <a href="#menu">Burgers</a>
+                <a href="#menu">Noodles</a>
+                <a href="#menu">Pizza</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Contact</h3>
+
+                <p>📞 Contact Restaurant</p>
+                <p>🍽️ Fresh Vegetarian Food</p>
+                <p>📍 Visit Motu Maharaj</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Motu Maharaj. All Rights Reserved.
+            </p>
+
+            <p>Made with ❤️ for Food Lovers</p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- RAZORPAY -->
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
